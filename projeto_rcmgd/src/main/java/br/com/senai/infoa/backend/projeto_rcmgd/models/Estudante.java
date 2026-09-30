@@ -23,17 +23,14 @@ public class Estudante {
     @Column
     private String telefone;
 
-    private Endereco endereco;
-
     public Estudante() {
     }
 
-    public Estudante(Integer id, String nome, String email, String telefone, Endereco endereco) {
+    public Estudante(Integer id, String nome, String email, String telefone) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
-        this.endereco = endereco;
     }
 
     public Integer getId() {
@@ -68,11 +65,4 @@ public class Estudante {
         this.telefone = telefone;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
 }
